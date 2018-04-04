@@ -1,4 +1,4 @@
-class ScantailorUniversal < Formula
+class ScantailorUniversalQt55 < Formula
   desc "Interactive post-processing tool for scanned pages"
   homepage "https://github.com/trufanov-nok/scantailor/"
   url "https://github.com/trufanov-nok/scantailor/archive/0.2.3.tar.gz"
@@ -10,6 +10,7 @@ class ScantailorUniversal < Formula
   depends_on "libtiff"
   depends_on "libpng"
   depends_on "qt@5.5"
+  depends_on :x11
 
   def install
     system "cmake", ".", "-DPNG_INCLUDE_DIR=#{MacOS::X11.include}", *std_cmake_args
