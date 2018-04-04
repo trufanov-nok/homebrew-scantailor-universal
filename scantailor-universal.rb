@@ -10,7 +10,8 @@ class ScantailorUniversal < Formula
   depends_on "libtiff"
   depends_on "libpng"
   depends_on "qt"
-
+  depends_on :x11
+  
   def install
     system "cmake", ".", "-DPNG_INCLUDE_DIR=#{MacOS::X11.include}", *std_cmake_args
     system "make", "install"
