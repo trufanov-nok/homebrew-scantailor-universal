@@ -2,7 +2,7 @@ class ScantailorUniversalQt55 < Formula
   desc "Interactive post-processing tool for scanned pages"
   homepage "https://github.com/trufanov-nok/scantailor/"
   url "https://github.com/trufanov-nok/scantailor/archive/0.2.8.tar.gz"
-  sha256 "d56ff329111b7ad54cd59c8a9c41f1ac5f8f506e2bd75f7b7e114498ec6b3cc5"
+  sha256 "dd36ac8e0eaa68bfd56cf47db173dc89e8b42039ac299024b297ec8ffe3634ce"
 
   depends_on "cmake" => :build
   depends_on "boost"
